@@ -1,67 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TG_@Gyani_Bro</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #242424, #3b5998);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
 
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@Gyani_Bro</title>
-  <link rel="stylesheet" href="https://cxh.pages.dev/style.css">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow-x: hidden;
-    }
+        /* Glowing Effect for Message */
+        .loading-message {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+            animation: glow 1.5s infinite alternate;
+        }
 
-    #player {
-      width: 100%;
-      max-width: 100%;
-      height: 56.25vw;
-      max-height: 70vh;
-      position: relative;
-      top: 0;
-      left: 0;
-      border: none;
-    }
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00; }
+            100% { box-shadow: 0 0 15px #ffcc00, 0 0 25px #ffcc00, 0 0 35px #ffcc00; }
+        }
 
-    @media (max-width: 600px) {
-      #player {
-        height: 50vh;
-      }
-    }
+        /* Video Player Styling */
+        .player-container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 20px auto;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            overflow: hidden;
+            background: #000;
+        }
 
-    #telegramBtn {
-      display: block;
-      width: 90%;
-      margin: 20px auto;
-      padding: 15px;
-      text-align: center;
-      background-color: #007bff;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-    }
+        .player-container iframe {
+            border-radius: 15px;
+            width: 100%;
+            height: 100%;
+        }
 
-    #telegramBtn:hover {
-      background-color: #0056b3;
-    }
-  </style>
-<style type="text/css">* {user-select: auto !important; -webkit-user-select: auto !important;}</style><input type="hidden" id="inject_idm_text_selection"></head>
+        /* Join Telegram Button */
+        .join-telegram-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .join-telegram-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #008fd6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .join-telegram-btn:hover {
+            background-color: #006bb3;
+        }
+    </style>
+</head>
 <body>
-  <iframe id="player" src="https://allrounder-live12.pages.dev/channel/tnt-2" title="Live match video player" allowfullscreen=""></iframe>
 
-  <a id="telegramBtn" href="https://t.me/WatchAddaLive" target="_blank">Join Our Telegram Channel</a>
-  <script>var joinTelegram = confirm("Join For More Links!!");
-    if (joinTelegram) {
-        window.location.href = "https://t.me/WatchAddaLive";
-    }
+    <!-- Loading Message -->
+    <div class="loading-message">Share The Links With Your Friends</div>
 
-    function welcome() {
-        window.open("https://t.me/WatchAddaLive");
-    }</script>
-<!-- Cloudflare Pages Analytics --><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;89ec3c1c820d4609b4a3643417d2cb06&quot;}"></script><!-- Cloudflare Pages Analytics -->
+    <!-- Video Player Section -->
+    <div class="player-container">
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe id="contentFrame" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen="true" scrolling="no" src="https://allrounder-live12.pages.dev/channel/tnt-2" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+    </div>
 
-</body></html>
+    <!-- Join Telegram Button -->
+    <div class="join-telegram-container">
+        <button class="join-telegram-btn" onclick="window.open('https://t.me/+dMtdPBTHz1Y1NzFl', '_blank')">Join Telegram Channel</button>
+    </div>
+<script>
+// alert('Join Our Telegram For Latest update')
+         if (confirm("Join Our Telegram Channel @GyaniBro") == true) {
+         window.open("
+https://t.me/+dMtdPBTHz1Y1NzFl", '_blank');
+     }
+</script>
+<script>
+// alert('Join Our Telegram For Latest update')
+         if (confirm("Join Our Telegram Channel @Gyani_Bro") == true) {
+         window.open("https://t.me/+dMtdPBTHz1Y1NzFl", '_blank');
+     }
+</script>
+
+</body>
+</html>
